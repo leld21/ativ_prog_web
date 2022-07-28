@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+    <head>
+        <meta charset ="UTF-8">
+        <title>tocando audio e video</title>
+    </head>
+    <body >
+        <video id="myvideo" width='800' height='600'>
+            <source src="rick.ogv" type="video/ogg">
+        </video>
+        <audio id="myaudio">
+            <source src="27_audio.m4a" type="audio/aac">
+        </audio>
+        <p>
+            <button onclick='playvideo()'>Play Video</button>
+            <button onclick='pausevideo()'>Pause Video</button>
+        </p>
+        <p>
+            <button onclick='playaudio()'>Play Audio</button>
+            <button onclick='pauseaudio()'>Pause Audio</button>
+        </p>
+        <script>
+            function playaudio(){
+                var x = document.getElementById("myaudio");
+                x.play();
+            }
+            function pauseaudio(){
+                var x = document.getElementById("myaudio");
+                x.pause();
+            }
+            
+            function playvideo(){
+                var x = document.getElementById("myvideo");
+                x.play();
+            }	
+            function pausevideo(){
+                var x = document.getElementById("myvideo");
+                x.pause();
+            }
+        </script>
+    </body>
+</html>
